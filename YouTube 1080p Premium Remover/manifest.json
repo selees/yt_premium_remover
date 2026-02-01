@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "YouTube 1080p Premium Remover",
+  "version": "1.0",
+  "description": "유튜브 화질 설정에서 1080p 프리미엄 항목을 숨깁니다.",
+  "permissions": ["activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["https://www.youtube.com/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
